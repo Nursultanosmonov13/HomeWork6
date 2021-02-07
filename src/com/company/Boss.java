@@ -21,8 +21,11 @@ public class Boss extends GameEntity {
         this.weaponBoss = weaponBoss;
     }
     public String printInfo(){
-        Weapon weapon = new Weapon();
+        Weapon weapon = new Weapon("Пистолет", "Mакаров");
         setWeaponBoss(weapon);
+        setHealthOfBoss(700);
+        setDamageBoss(50);
+        setProtectionTypeBoss("Тор");
         return ("Здоровье босса: " + getHealthOfBoss() + ", урон босса:" + getDamageBoss() + ", тип защиты босса:" + getProtectionTypeBoss() +
                 ", тип оружия Босса:" + getWeaponBoss().getWeaponType() + ", наименование оружия Босса:" + getWeaponBoss().getWeaponNames());
     }
