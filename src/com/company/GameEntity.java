@@ -2,11 +2,17 @@ package com.company;
 
 public class GameEntity {
     private int healthOfHeroes; //здоровье героев
-    private int heroDamage; // урон героев
+    private int heroDamage; //здоровье босса
     private String superpower; // Супер сила героев
     private int healthOfBoss;   //здоровье босса
     private int damageBoss;     // урон босса
-    private String protectionTypeBoss; // тип защиты босса
+    //private String protectionTypeBoss; // тип защиты босса
+
+    public GameEntity(){}
+
+    public int getDamageBoss() {
+        return damageBoss;
+    }
 
     public int getHealthOfHeroes() {
         return healthOfHeroes;
@@ -45,11 +51,5 @@ public class GameEntity {
         this.damageBoss = damageBoss;
     }
 
-    public String getProtectionTypeBoss() {
-        return protectionTypeBoss;
-    }
 
-    public void setProtectionTypeBoss(String protectionTypeBoss) {
-        this.protectionTypeBoss = protectionTypeBoss;
-    }
 }
