@@ -12,6 +12,6 @@ public class Skeleton extends Boss {
     }
 
     public String printInfo() {
-        return super.printInfo() + "количество стрел:" + numberOfArrows + "количестыр потронов " + 7;
+        return super.printInfo()+ "количество стрел:" + numberOfArrows + "количестыр потронов " + 7;
     }
 }
